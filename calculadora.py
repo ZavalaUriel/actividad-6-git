@@ -4,7 +4,7 @@ def precio_con_descuento(precio, descuento):
         raise ValueError("El precio no puede ser negativo")
     if descuento < 0 or descuento > 100:
         raise ValueError("El descuento debe estar entre 0 y 100")
-    return round(precio - precio * descuento / 10, 2)
+    return round(precio - precio * descuento / 100, 2)
 
 
 def calcular_iva(precio, tasa=16):
