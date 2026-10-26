@@ -28,4 +28,4 @@ jobs:
         run: pytest -v test_integracion.py
 
       - name: Pruebas de sistema
-        run: pytest -v system.py
+        run: pytest -v test_system.py
