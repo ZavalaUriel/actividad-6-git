@@ -21,5 +21,11 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      - name: Ejecutar pruebas
-        run: pytest -v
+      - name: Pruebas unitarias
+        run: pytest -v test_calculadora.py
+
+      - name: Pruebas de integración
+        run: pytest -v test_integracion.py
+
+      - name: Pruebas de sistema
+        run: pytest -v test_system.py
